@@ -1,6 +1,8 @@
 package task1;
 
-public class Dog {
+import task20.Pricable;
+
+public class Dog implements Pricable {
     private String name;
     private int age;
     private boolean isHungry;
@@ -56,5 +58,10 @@ public class Dog {
                 ", age=" + age +
                 ", isHungry=" + isHungry +
                 '}';
+    }
+
+    @Override
+    public int getPrice() {
+        return 10;
     }
 }
